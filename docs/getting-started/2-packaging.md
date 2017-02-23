@@ -31,6 +31,7 @@ Section [NuGet Package Metadata](../using/nuget-package-metadata.md) provides ad
    * **Id** - name of the application (no spaces)
    * **Version** - version specified in `Properties\Assembly.cs`
    * **Dependencies** - Squirrel expects no dependencies in the package (all files should be explicitly added to the package)
+   * **Title** - Application title used in the MSI generation
 3. **Add lib & net45** - add the `lib` folder and the `net45` folder to the project. Squirrel is expecting a single `lib / net45` directory provided regardless of whether your app is a `net45` application.
 4. **Add Release Files** - add all the files from `bin\Release` needed by MyApp to execute (including the various files required by Squirrel).
    * **Include MyApp Files:** MyApp.exe, MyApp.exe.config, any non-standard .NET dll's needed by MyApp.exe.
